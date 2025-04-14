@@ -29,7 +29,7 @@ No installation required - this is a frontend-only project. Simply clone the rep
 
 ```bash
 git clone https://github.com/AbdulAfriqm/Projects.git
-cd netflix-clone
+cd Projects
 ```
 
 ## How to Use
