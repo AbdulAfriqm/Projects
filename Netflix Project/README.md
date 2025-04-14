@@ -28,7 +28,7 @@ A responsive Netflix clone built with pure HTML, CSS, and JavaScript that mimics
 No installation required - this is a frontend-only project. Simply clone the repository and open `index.html` in your browser.
 
 ```bash
-git clone https://github.com/your-username/netflix-clone.git
+git clone https://github.com/AbdulAfriqm/Projects.git
 cd netflix-clone
 ```
 
