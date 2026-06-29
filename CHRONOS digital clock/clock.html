@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Clock</title>
+  <link rel="stylesheet" href="clock.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&family=Cinzel:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+  <div class="vignette"></div>
+
+  <main class="stage">
+
+    <!-- Top ornament -->
+    <div class="ornament ornament--top">
+      <svg viewBox="0 0 320 28" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="14" x2="130" y2="14" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+        <polygon points="135,14 142,7 149,14 142,21" fill="none" stroke="currentColor" stroke-width="0.8"/>
+        <line x1="154" y1="14" x2="166" y2="14" stroke="currentColor" stroke-width="1.2"/>
+        <circle cx="160" cy="14" r="3" fill="currentColor"/>
+        <line x1="171" y1="14" x2="185" y2="14" stroke="currentColor" stroke-width="1.2"/>
+        <polygon points="171,14 178,7 185,14 178,21" fill="none" stroke="currentColor" stroke-width="0.8"/>
+        <line x1="190" y1="14" x2="320" y2="14" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+      </svg>
+    </div>
+
+    <!-- Label -->
+    <p class="label">CHRONOS</p>
+
+    <!-- Clock Face -->
+    <div class="clock-face">
+
+      <div class="time-block" id="block-hours">
+        <span class="digit-top" id="hours-top">0</span>
+        <span class="digit-bottom" id="hours-bot">0</span>
+        <span class="time-unit">HRS</span>
+      </div>
+
+      <div class="separator" id="sep1">
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <div class="time-block" id="block-minutes">
+        <span class="digit-top" id="mins-top">0</span>
+        <span class="digit-bottom" id="mins-bot">0</span>
+        <span class="time-unit">MIN</span>
+      </div>
+
+      <div class="separator" id="sep2">
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <div class="time-block" id="block-seconds">
+        <span class="digit-top" id="secs-top">0</span>
+        <span class="digit-bottom" id="secs-bot">0</span>
+        <span class="time-unit">SEC</span>
+      </div>
+
+    </div>
+
+    <!-- Period & Date -->
+    <div class="sub-row">
+      <div class="period-badge" id="period">AM</div>
+      <div class="date-display" id="date-display">—</div>
+    </div>
+
+    <!-- Bottom ornament -->
+    <div class="ornament ornament--bottom">
+      <svg viewBox="0 0 320 28" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="14" x2="130" y2="14" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+        <polygon points="135,14 142,7 149,14 142,21" fill="none" stroke="currentColor" stroke-width="0.8"/>
+        <line x1="154" y1="14" x2="166" y2="14" stroke="currentColor" stroke-width="1.2"/>
+        <circle cx="160" cy="14" r="3" fill="currentColor"/>
+        <line x1="171" y1="14" x2="185" y2="14" stroke="currentColor" stroke-width="1.2"/>
+        <polygon points="171,14 178,7 185,14 178,21" fill="none" stroke="currentColor" stroke-width="0.8"/>
+        <line x1="190" y1="14" x2="320" y2="14" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+      </svg>
+    </div>
+
+    <!-- Timezone -->
+    <p class="timezone" id="timezone-label">—</p>
+
+  </main>
+
+  <script src="clock.js"></script>
+</body>
+</html>
